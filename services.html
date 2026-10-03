@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan & Solusi - PT Solusi Teknologi Nusantara</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#2563eb',
+                            dark: '#1d4ed8',
+                            light: '#3b82f6'
+                        },
+                        secondary: {
+                            DEFAULT: '#0f172a',
+                            light: '#1e293b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Top Bar -->
+    <div class="bg-secondary text-slate-300 text-xs py-2 px-4 sm:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span><i class="fa-solid fa-envelope text-primary mr-1"></i> info@solusiteknologi.co.id</span>
+                <span><i class="fa-solid fa-phone text-primary mr-1"></i> +62 (21) 555-0199</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="hidden md:inline"><i class="fa-solid fa-clock text-primary mr-1"></i> Sen - Jum: 08:00 - 17:00 WIB</span>
+                <div class="flex gap-2">
+                    <a href="#" class="hover:text-primary transition"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-primary transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-primary transition"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="hover:text-primary transition"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="bg-primary text-white p-2 rounded-lg font-bold text-xl flex items-center justify-center w-10 h-10 shadow-md">
+                    <i class="fa-solid fa-cube"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold text-secondary tracking-tight">SOLUSI<span class="text-primary">TEK</span></span>
+                    <span class="block text-[10px] text-slate-500 font-medium tracking-wider uppercase">PT Solusi Teknologi Nusantara</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600">
+                <a href="index.html" class="hover:text-primary transition">Beranda</a>
+                <a href="about.html" class="hover:text-primary transition">Tentang Kami</a>
+                <a href="services.html" class="text-primary font-semibold transition">Layanan</a>
+                <a href="portfolio.html" class="hover:text-primary transition">Portofolio</a>
+                <a href="contact.html" class="hover:text-primary transition">Kontak</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-700 focus:outline-none text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 py-4 space-y-3 shadow-lg">
+            <a href="index.html" class="block text-slate-700 hover:text-primary py-2">Beranda</a>
+            <a href="about.html" class="block text-slate-700 hover:text-primary py-2">Tentang Kami</a>
+            <a href="services.html" class="block text-primary font-semibold py-2">Layanan</a>
+            <a href="portfolio.html" class="block text-slate-700 hover:text-primary py-2">Portofolio</a>
+            <a href="contact.html" class="block text-slate-700 hover:text-primary py-2">Kontak</a>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="bg-secondary text-white py-16 px-4 sm:px-8 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto relative z-10 text-center space-y-4">
+            <div class="inline-flex items-center gap-2 bg-primary/20 text-primary-light px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider">
+                Portofolio Layanan IT
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Solusi & Layanan Komprehensif</h1>
+            <p class="text-slate-300 max-w-2xl mx-auto text-base sm:text-lg">
+                Solusi teknologi end-to-end yang dirancang khusus untuk memenuhi standar enterprise dan mengoptimalkan performa bisnis Anda.
+            </p>
+        </div>
+    </section>
+
+    <!-- Detailed Services List -->
+    <section class="py-20 px-4 sm:px-8 max-w-7xl mx-auto space-y-20">
+
+        <!-- Service 1: Software Development -->
+        <div id="software-dev" class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex items-center justify-center text-2xl">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h2 class="text-3xl font-extrabold text-secondary tracking-tight">Software Development Kustom</h2>
+                <p class="text-slate-600 leading-relaxed">
+                    Kami membangun aplikasi web dan mobile enterprise yang scalable, aman, dan dirancang sesuai kebutuhan unik proses bisnis Anda. Dari tahap analisis kebutuhan hingga deployment dan pemeliharaan jangka panjang.
+                </p>
+                <div class="space-y-3">
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-primary mt-1"></i>
+                        <span class="text-sm text-slate-700"><strong>Web Applications:</strong> ERP, CRM, E-commerce, dan sistem manajemen internal berbasis cloud.</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-primary mt-1"></i>
+                        <span class="text-sm text-slate-700"><strong>Mobile Apps:</strong> Aplikasi iOS & Android native maupun cross-platform (Flutter/React Native).</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-primary mt-1"></i>
+                        <span class="text-sm text-slate-700"><strong>API Integration:</strong> Menghubungkan sistem lama dengan layanan pihak ketiga secara mulus.</span>
+                    </div>
+                </div>
+                <div>
+                    <a href="contact.html" class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-medium px-6 py-3 rounded-xl shadow transition">
+                        Konsultasi Proyek Software <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-xl border border-slate-200">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop" alt="Software Development" class="w-full h-auto object-cover">
+            </div>
+        </div>
+
+        <!-- Service 2: Cloud Solutions -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-xl border border-slate-200">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop" alt="Cloud Solutions" class="w-full h-auto object-cover">
+            </div>
+            <div class="space-y-6 order-1 lg:order-2">
+                <div class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex items-center justify-center text-2xl">
+                    <i class="fa-solid fa-cloud"></i>
+                </div>
+                <h2 class="text-3xl font-extrabold text-secondary tracking-tight">Cloud Solutions & DevOps</h2>
+                <p class="text-slate-600 leading-relaxed">
+                    Tingkatkan fleksibilitas dan kurangi biaya infrastruktur fisik dengan solusi migrasi cloud yang aman. Kami membantu Anda merancang arsitektur cloud di AWS, Microsoft Azure, atau Google Cloud Platform.
+                </p>
+                <div class="space-y-3">
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-primary mt-1"></i>
+                        <span class="text-sm text-slate-700"><strong>Cloud Migration:</strong> Pemindahan data dan aplikasi legacy ke cloud tanpa downtime signifikan.</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-primary mt-1"></i>
+                        <span class="text-sm text-slate-700"><strong>CI/CD Automation:</strong> Pipeline deployment otomatis untuk rilis fitur yang lebih cepat dan minim risiko.</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-primary mt-1"></i>
+                        <span class="text-sm text-slate-700"><strong>High Availability:</strong> Sistem load balancing dan disaster recovery berstandar 99.9% uptime.</span>
+                    </div>
+                </div>
+                <div>
+                    <a href="contact.html" class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-medium px-6 py-3 rounded-xl shadow transition">
+                        Diskusikan Infrastruktur Cloud <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 3: Cyber Security -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex items-center justify-center text-2xl">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h2 class="text-3xl font-extrabold text-secondary tracking-tight">Cyber Security & Penetration Testing</h2>
+                <p class="text-slate-600 leading-relaxed">
+                    Lindungi aset digital dan reputasi perusahaan Anda dari ancaman serangan siber yang semakin canggih melalui audit keamanan menyeluruh oleh ethical hacker tersertifikasi.
+                </p>
+                <div class="space-y-3">
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-primary mt-1"></i>
+                        <span class="text-sm text-slate-700"><strong>Vulnerability Assessment:</strong> Pemindaian sistem untuk mendeteksi celah keamanan sebelum dieksploitasi pihak luar.</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-primary mt-1"></i>
+                        <span class="text-sm text-slate-700"><strong>Penetration Testing:</strong> Simulasi serangan nyata pada web, mobile, dan jaringan infrastruktur.</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-primary mt-1"></i>
+                        <span class="text-sm text-slate-700"><strong>ISO 27001 Compliance:</strong> Pendampingan sertifikasi tata kelola keamanan informasi standar internasional.</span>
+                    </div>
+                </div>
+                <div>
+                    <a href="contact.html" class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-medium px-6 py-3 rounded-xl shadow transition">
+                        Audit Keamanan Sistem <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-xl border border-slate-200">
+                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&auto=format&fit=crop" alt="Cyber Security" class="w-full h-auto object-cover">
+            </div>
+        </div>
+
+        <!-- Service 4: AI & Data Analytics -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-xl border border-slate-200">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" alt="AI & Data Analytics" class="w-full h-auto object-cover">
+            </div>
+            <div class="space-y-6 order-1 lg:order-2">
+                <div class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex items-center justify-center text-2xl">
+                    <i class="fa-solid fa-chart-pie"></i>
+                </div>
+                <h2 class="text-3xl font-extrabold text-secondary tracking-tight">AI & Data Analytics</h2>
+                <p class="text-slate-600 leading-relaxed">
+                    Ubah data mentah perusahaan menjadi wawasan strategis yang bernilai tinggi. Kami membantu mengimplementasikan model kecerdasan buatan, predictive analytics, dan dashboard eksekutif real-time.
+                </p>
+                <div class="space-y-3">
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-primary mt-1"></i>
+                        <span class="text-sm text-slate-700"><strong>Business Intelligence:</strong> Pembuatan dashboard interaktif (Tableau/PowerBI) untuk monitoring performa bisnis.</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-primary mt-1"></i>
+                        <span class="text-sm text-slate-700"><strong>Machine Learning Models:</strong> Otomatisasi prediksi tren pasar, churn rate, dan rekomendasi produk.</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-primary mt-1"></i>
+                        <span class="text-sm text-slate-700"><strong>Big Data Pipeline:</strong> Pengelolaan data dalam volume besar dengan arsitektur data warehouse modern.</span>
+                    </div>
+                </div>
+                <div>
+                    <a href="contact.html" class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-medium px-6 py-3 rounded-xl shadow transition">
+                        Eksplorasi Solusi Data <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="bg-slate-100 py-20 px-4 sm:px-8">
+        <div class="max-w-4xl mx-auto space-y-12">
+            <div class="text-center space-y-4">
+                <div class="inline-flex items-center gap-2 bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                    Pertanyaan Umum
+                </div>
+                <h2 class="text-3xl font-extrabold text-secondary tracking-tight">Hal yang Sering Ditanyakan</h2>
+                <p class="text-slate-600">Temukan jawaban atas pertanyaan seputar layanan dan alur kerja sama kami.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button class="faq-toggle w-full text-left p-6 font-bold text-secondary flex justify-between items-center focus:outline-none">
+                        <span>Bagaimana tahapan awal kerja sama pengembangan proyek dengan PT Solusi Teknologi Nusantara?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-4">
+                        Kami mulai dengan sesi konsultasi gratis untuk memahami kebutuhan bisnis Anda. Setelah itu, tim analis kami menyusun dokumen spesifikasi teknis dan estimasi waktu serta anggaran. Begitu disepakati, proyek dikerjakan dengan metodologi agile yang transparan.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button class="faq-toggle w-full text-left p-6 font-bold text-secondary flex justify-between items-center focus:outline-none">
+                        <span>Berapa lama waktu rata-rata yang dibutuhkan untuk menyelesaikan sebuah proyek software?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-4">
+                        Durasi proyek bervariasi tergantung pada tingkat kompleksitas dan cakupan fitur. Aplikasi berskala menengah umumnya memakan waktu 2 hingga 4 bulan, sementara sistem enterprise besar dapat memakan waktu 6 bulan atau lebih.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button class="faq-toggle w-full text-left p-6 font-bold text-secondary flex justify-between items-center focus:outline-none">
+                        <span>Apakah tersedia dukungan pemeliharaan setelah aplikasi diluncurkan?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-4">
+                        Tentu saja. Kami menyediakan layanan garansi pasca-peluncuran serta paket pemeliharaan berkelanjutan (Maintenance & Support) mencakup pembaruan sistem, monitoring keamanan, dan penambahan fitur berkala.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 pt-16 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <div class="space-y-4">
+                <div class="flex items-center gap-2">
+                    <div class="bg-primary text-white p-2 rounded-lg font-bold text-lg flex items-center justify-center w-8 h-8">
+                        <i class="fa-solid fa-cube"></i>
+                    </div>
+                    <span class="text-lg font-extrabold text-white tracking-tight">SOLUSI<span class="text-primary">TEK</span></span>
+                </div>
+                <p class="text-sm leading-relaxed">
+                    PT Solusi Teknologi Nusantara adalah mitra terpercaya dalam transformasi digital, pengembangan software enterprise, dan solusi cloud handal.
+                </p>
+                <div class="flex gap-3 text-lg">
+                    <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-primary hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-primary hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-primary hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-primary hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-base mb-4">Tautan Cepat</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-primary transition">Beranda</a></li>
+                    <li><a href="about.html" class="hover:text-primary transition">Tentang Kami</a></li>
+                    <li><a href="services.html" class="hover:text-primary transition">Layanan & Solusi</a></li>
+                    <li><a href="portfolio.html" class="hover:text-primary transition">Portofolio Klien</a></li>
+                    <li><a href="contact.html" class="hover:text-primary transition">Hubungi Kami</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-base mb-4">Layanan Utama</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="services.html" class="hover:text-primary transition">Software Development</a></li>
+                    <li><a href="services.html" class="hover:text-primary transition">Cloud & DevOps</a></li>
+                    <li><a href="services.html" class="hover:text-primary transition">Cyber Security Audit</a></li>
+                    <li><a href="services.html" class="hover:text-primary transition">AI & Data Analytics</a></li>
+                    <li><a href="services.html" class="hover:text-primary transition">Enterprise IT Consulting</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-white font-bold text-base mb-4">Buletin & Pembaruan</h4>
+                <p class="text-sm">Dapatkan wawasan teknologi terbaru dan artikel eksklusif langsung di email Anda.</p>
+                <form id="newsletter-form" class="space-y-2">
+                    <input type="email" placeholder="Alamat Email Anda" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-white text-sm focus:outline-none focus:border-primary" required>
+                    <button type="submit" class="w-full bg-primary hover:bg-primary-dark text-white font-medium py-2.5 rounded-lg text-sm transition">Berlangganan</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 border-t border-slate-800 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500">
+            <p>&copy; 2025 PT Solusi Teknologi Nusantara. Hak Cipta Dilindungi Undang-Undang.</p>
+            <div class="flex gap-6 mt-4 sm:mt-0">
+                <a href="#" class="hover:text-primary transition">Kebijakan Privasi</a>
+                <a href="#" class="hover:text-primary transition">Syarat & Ketentuan</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
